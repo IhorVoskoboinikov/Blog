@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block additional %}
+
+<h>
+    Nothing to show
+</h>
+
+{% endblock additional %}
+
+
+{% block content %}
+Posts creation ------------
+</br>
+
+<form action='' method='post'> {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Create new post">
+</form>
+
+{% endblock content %}
